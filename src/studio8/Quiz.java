@@ -26,7 +26,17 @@ public class Quiz {
 	}
 	
 	public void takeQuiz() {
-		//FIXME
+		int noChickFilASauce5 = 0;
+		for (int i =0; i < questions.length; i++)
+		{
+			questions[i].displayPrompt();
+			String noChickFilASauce4 = getUserAnswer();
+			System.out.println("Points earned: " + questions[i].checkAnswer(noChickFilASauce4));
+			noChickFilASauce5 += questions[i].checkAnswer(noChickFilASauce4);
+	
+		}
+		System.out.println(noChickFilASauce5 + "/" + getTotalPoints());
+		
 	}
 	
 	public static void main(String[] args) {

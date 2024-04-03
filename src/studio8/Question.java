@@ -4,6 +4,7 @@ public class Question {
 	private String prompt;
 	private String answer;
 	private int points;
+	private String noChickFilASauce3;
 	
 	public Question(String prompt, String answer, int points) {
 		this.prompt = prompt;
